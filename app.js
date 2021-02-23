@@ -21,6 +21,7 @@ const fromEuroToDollar = function(valueInEuro){
     // returnamos el valor
     return valueInDollar;
 }
+
 // Dollar to Yen
 const fromDollarToYen = function(valueInDollar){
     let valueInYen = oneEuroIs.JPY * (valueInDollar / oneEuroIs.USD);
@@ -32,5 +33,6 @@ const fromYenToPound = function(valueInYen){
     return valueinPound;
 }
 module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound };
+console.log(fromEuroToDollar(1));
 console.log(fromDollarToYen(1));
 console.log(fromYenToPound(1));
